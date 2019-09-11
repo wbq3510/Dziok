@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bartłomiej Dziok</title>
+    <link href="https://fonts.googleapis.com/css?family=Overlock:400,400i,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+   
+    <link rel="stylesheet" href="lightboxgallery/dist/css/lightboxgallery-min.css">
+    <link rel="stylesheet" href="lightboxgallery/demo/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="wrap">
+            <nav>
+                     <ul>
+                        <li><a id="start" href="index.html">Start</a></li>
+                        <li><a id="omnie" href="oMnie.html">O mnie</a></li>
+                        <li><a class="activeNav">Portfolio</a>
+                        <ul>
+                             <li><a href="tattoo.html">Tatuaże</a></li>
+                            <li><a href="szkice.html">Szkice</a></li>
+                            <li><a  href="photoshop.html">Photoshop</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                            </nav>
+                        
+
+                     <div class="burger">
+                        <i class="fas fa-bars"></i>
+                                  </div>  
+                                  <aside>
+                                    <ul>
+                                        <li><a id="start" href="index.html">Start</a></li>
+                                        <li><a id="omnie" href="oMnie.html">O mnie</a></li>
+                                        <li><a class="portfolio">+ Portfolio</a>
+                                         <ul class="hidePortfolio">
+                                         <li><a href="tattoo.html">Tatuaże</a></li>
+                                           <li><a href="szkice.html">Szkice</a></li>
+                                            <li><a href="photoshop.html">Photoshop</a></li>
+                                        </ul>
+                                        </li>
+                                        <li><a href="contact.html">Kontakt</a></li>
+                                    </ul>
+                                </aside>
+        <div class="logo">
+            <h1>
+                    <a href="index.html">Bartłomiej Dziok</a>
+                </h1>
+                <p>Tattoos & graphics</p>
+            </div>
+            
+            <section class="wrapTattoo">
+                <h1 class="tattooText">
+                    Portfolio - Photoshop</h1>
+        
+                    <div class="lightboxgallery-gallery clearfix">
+
+                      <a class="lightboxgallery-gallery-item" target="_blank" href="szkice/1.jpg" data-title="Imie Nazwisko" data-alt="Imie Nazwisko" data-desc="Opis zdjęcia. Pieseł wow, piąteczka wow">
+                        <div>
+                          <img src="szkice/1.jpg" title="Bartłomiej Dziok" alt="Imie Nazwisko">
+                          <div class="lightboxgallery-gallery-item-content">
+                            <span class="lightboxgallery-gallery-item-title">opis</span>
+                          </div>
+                        </div>
+                      </a>
+                   
+             
+                      <a class="lightboxgallery-gallery-item" target="_blank" href="szkice/1.jpg" data-title="Imie Nazwisko" data-alt="Imie Nazwisko" data-desc="Opis zdjęcia.">
+                        <div>
+                          <img src="szkice/1.jpg" title="Bartłomiej Dziok" alt="Imie Nazwisko">
+                          <div class="lightboxgallery-gallery-item-content">
+                            <span class="lightboxgallery-gallery-item-title">opis</span>
+                          </div>
+                        </div>
+                      </a>
+                 
+                   </div>
+                </section>
+        <footer>
+                <p>© 2019 by Bartłomiej Dziok.
+                    <a href="http://www.google.pl"target="_blank">
+                        <i class="fab fa-facebook-square"></i></a> 
+            </footer>
+    </section>
+  
+    <script src="https://kit.fontawesome.com/3a2ec7385e.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="lightboxgallery/dist/js/lightboxgallery-min.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
+          event.preventDefault();
+          $(this).lightboxgallery({
+            showCounter: true,
+            showTitle: true,
+            showDescription: true
+          });
+        });
+      });
+      </script>
+</body>
+
+</html>
